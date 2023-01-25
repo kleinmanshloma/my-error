@@ -1,0 +1,13 @@
+[
+  {
+    "id": 1,
+    "barcode": "45",
+    "item": "test",
+    "description": "test2",
+    "image": "",
+    "manufacturer": "test",
+    "buyPrice": 5,
+    "sellPrice": 15,
+    "qty": 5
+  }
+]

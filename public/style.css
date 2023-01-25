@@ -1,0 +1,120 @@
+body {
+  /*   background-color: rgba(0, 128, 0, 0.222); */
+  background-color: rgba(216, 227, 255, 0.464);
+}
+
+div {
+  display: block;
+}
+
+.display-hidden {
+  display: none;
+}
+
+.addSvg {
+  width: 24px;
+  height: 24px;
+}
+
+.add-Delivery-Address-btn {
+  display: inline-block;
+  width: 42px;
+  height: 24px;
+}
+
+.dropdown.dropdown-masked {
+  position: static;
+}
+.dropdown.dropdown-masked.open > .dropdown-menu {
+  background: #ccc;
+  box-shadow: 0 100vh 0 100vh rgba(0, 0, 0, 0.5), 0 5px 5px rgba(0, 0, 0, 0.5);
+  width: 100vw;
+  border-width: 1px 0 0;
+  border-radius: 0;
+  margin-left: -1px;
+}
+
+.dropdown .dropdown-menu {
+  transition: all 0.3s;
+  max-height: 0;
+  display: block;
+  overflow: hidden;
+  opacity: 0;
+}
+.dropdown.open .dropdown-menu {
+  transition: max-height 1s;
+  max-height: 100vh;
+  opacity: 1;
+}
+
+.btn-check:focus + .btn-success,
+.btn-success:focus {
+  color: #fff;
+  --bs-btn-bg: rgb(13, 0, 98);
+  /*   background-color: rgb(13, 0, 98); */
+  border-color: rgb(13, 0, 98);
+  box-shadow: 0 0 0 0.25rem rgba(60, 99, 153, 0.5);
+}
+
+.btn-success,
+.bg-dark,
+.btn-outline-success {
+  color: #fff;
+  --bs-bg-opacity: 0.5;
+  background-color: rgba(0, 72, 253, 0.464) !important;
+  --bs-btn-color: rgba(0, 148, 253, 0.464);
+  --bs-btn-hover-border-color: rgba(0, 72, 253, 0.464);
+  --bs-btn-hover-bg: rgba(0, 72, 253, 0.464);
+  --bs-btn-hover-color: #fff;
+  --bs-btn-border-color: rgba(0, 72, 253, 0.464);
+  --bs-btn-active-color: rgb(13, 0, 98);
+  --bs-btn-active-bg: rgba(0, 135, 253, 0.464);
+  --bs-btn-active-border-color: rgba(0, 135, 253, 0.464);
+  --bs-btn-active-shadow: rgb(13, 0, 98);
+  --bs-btn-disabled-color: rgba(0, 72, 253, 0.464);
+  --bs-btn-disabled-bg: transparent;
+  --bs-btn-disabled-border-color: rgba(0, 72, 253, 0.464);
+  --bs-gradient: none;
+}
+
+/* 
+/* .slider {
+  width: 3.5rem;
+  height: 2rem;
+  border: solid 2px rgb(10, 10, 10);
+  border-radius: 100px;
+  background: rgba(246, 246, 246, 0.291);
+  /* position: relative; */
+/* overflow: hidden;
+}*/
+
+/* .slider-track {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+} */
+
+/*.slider-handle {
+  margin: 10% auto auto 0.2rem;
+  width: 1rem;
+  height: 1rem;
+  border-radius: 100px;
+  background: #0000ff;
+  transition: left 0.5s ease-in-out;
+}
+
+.slider-handle.sliding {
+  animation: slide 0.5s linear;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(100%);
+  }
+} */

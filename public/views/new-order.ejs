@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="new-order.css">
+    <title>New Order</title>
+  </head>
+  <body>
+      <div class="container mt-4  mb-5">
+        <nav class="navbar navbar-dark bg-dark">
+          <div class="container-md justify-content-md-center">
+           
+              <form action="/new-order" method="POST">
+                <input
+                id="search-input" 
+                  class="form-control me-3 col-md-3"
+                  type="search"
+                  placeholder="  Enter Barcode ID or Product Name"
+                  aria-label="Search"
+                  name="search-input"
+                />
+                <button  type="submit" class="btn btn-outline-success search-btn">
+                  Search
+                </button>
+              </form>
+            </div>
+      </div>
+        </nav>
+
+        <% if(barcode){ %>
+        <div>
+          <ul>
+            <li><%= barcode %></li>
+            <li><%= item %></li>
+            <li><%= image %></li>
+            <li><%= description %></li>
+            <li><%= maufacturer %></li>
+          </ul>
+        </div>
+        <% } %>
+        <ul></ul>
+
+        <div class="container d-flex justify-content-md-center">
+          <div class="mb-3 col-sm-2  me-3">
+            <form id="new-order">
+            <label class="form-label" for="buy-price">Buy Price</label>
+            <input
+              class="form-control"
+              type="text"
+              name="buy-price"
+              id="buy-price"
+            />
+          </div>
+  
+          <div class="mb-3 col-md-2  me-3">
+            <label class="form-label" for="qty">QTY</label>
+            <input class="form-control" type="text" name="qty" id="qty" />
+          </div>
+  
+          <div class="mb-3 col-md-3  me-3">
+            <label class="form-label" for="date">Date</label>
+            <input class="form-control" type="date" name="date" id="date" />
+          </div>
+
+          <button class="btn btn-success" type="submit">Save</button>
+        </div>
+      </form>
+
+
+  
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="Functions.js"></script>
+    <script src="new-order.js"></script>
+    
+  </body>
+</html>

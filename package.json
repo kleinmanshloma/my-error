@@ -1,0 +1,27 @@
+{
+  "name": "invoicing-and-over-view",
+  "version": "1.0.0",
+  "description": "b\"h can you have a perfact over view on the your invetory and your finance",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kleinmanshloma/invoicing.git"
+  },
+  "author": "shloma kleinman",
+  "license": "Copyright (c) shloma kleinman skwebdeveloper.net@gmail.com",
+  "bugs": {
+    "url": "https://github.com/kleinmanshloma/invoicing/issues"
+  },
+  "homepage": "https://github.com/kleinmanshloma/invoicing#readme",
+  "dependencies": {
+    "ejs": "^3.1.8",
+    "express": "^4.18.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20"
+  }
+}
